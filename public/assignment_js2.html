@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment js 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="alert alert-info text-center" style="margin-top: 50px;">
+                <h1>Chơi Việt Lót. Chọn số xong biết ngay kết quả</h1>
+                <p>
+                    <strong>Lưu Ý:</strong> Nếu bạn thắng phần thưởng ở đây chỉ là hư ảo và đừng đòi tiền tôi nhá</p>
+            </div>
+            <h2>
+                Nếu các bạn chưa rõ cách chơi hẫy bấm vào đây nhé:
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#huongdanchoi" aria-expanded="true">Xem Hướng Dẫn Chơi</button>
+            </h2>
+            <div id="huongdanchoi" class="collapse">
+                <div class="col-md-6 text-center">
+                    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#cachchoi" aria-expanded="true">Xem Hướng Dẫn Chơi</button>
+                    <div class="collapse" id="cachchoi">
+                        <ol  class="text-left">
+                            <li>họn 5 số mà bạn cho là sẽ đúng </li>
+                            <li>Sau khi chọn xong bấm submit</li>
+                            <li>Đợi kết quả chỉ ra. Bạn sẽ thấy số mà vòng quay đưa ra</li>
+                            <li>So sánh với cơ cấu giả thưởng. Hoặc bấm nút <mark>Quà Của Tôi</mark> để xem bạn có trúng gì không nhé</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#giaithuong" aria-expanded="true">Cơ Cấu Giải Thưởng</button>
+                    <div class="collapse text-left" id="giaithuong">
+                        <h3>So sánh số bạn nhập và con số random hôm nay nếu:</h3>
+                        <p>Nếu đúng dưới 2 số thì chúc mừng bạn không có nghìn nào.</p>
+                        <p>Nếu đúng 3 số: Tung hoa đi nào bạn có 500.000VNĐ</p>
+                        <p>Nếu đúng 4 số: Báo cô già chú bác ở nhà mổ trâu đi nhé. Bạn có 20 cụ hay còn gọi là 20.000.000VNĐ</p>
+                        <p>Nếu chúng 5 số: Bạn có cần chúng tôi liên hệ hộ nhà thiết kế hay cửa hàng xe hôi nào không vì bạn đã chúng 10 tỵ rồi đấy.</p>
+                    </div>
+                </div>
+            </div> 
+         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="form-group">
+                <label>Input Number</label>
+                <input type="number" min="0" max="99" name="luckynumber" id="luckynumber"
+                    class="form-control" />
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="inputNumber()" class="btn btn-primary">Submit</button>
+                <button type="button" onclick="choilai()" class="btn btn-danger">Chơi Lại</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/bt2.js"></script>
+</body>
+</html>
