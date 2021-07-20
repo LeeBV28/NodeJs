@@ -1,6 +1,6 @@
 var express = require("express"); // gọi module vào để dùng
 var app = express(); // tạo một ứng dụng từ module
-var port = process.env.PORT | 5000; // cổng
+var port = process.env.PORT || 5000; // cổng
 
 app.listen(port,function (){   //khởi tại một máy chủ giống như cho máy chủ chạy
     console.log("sever is running ....."); // function để báo máy chủ đang chạy thành công
