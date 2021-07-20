@@ -1,0 +1,13 @@
+Khởi tạo ejs:
+    + install ejs: npm install ejs
+    + Tạo folder name views: là một thư mục lớn ngang hàng với index.html
+
+cài thêm module: Thiếu module nào thì npm intall thêm module đấy
+    npm install tên file thiếu
+
+Đẩy lên Heroku:
+    + Port: var port = process.env.PORT | 5000; Để máy chủ hiểu rẳng tự sét port nếu không thì lấy 5000
+    + .gitignore: không đẩy file node_modules lên /node_module/
+    + Tạo file Procfile viết lệnh chạy web: node index.js
+
+

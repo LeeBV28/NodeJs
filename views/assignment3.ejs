@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ass3.css" type="text/css"/>
+</head>
+<body>
+<div class="top">
+    <h1>* featured products</h1>
+</div>
+<div class="bottom">
+    <% for(var i=0; i<product.length; i++){ %>
+        <div class="noidung">
+            <img src="<%= product[i].images %>"/>
+            <h1><%= product[i].name %></h1>
+            <p>bộ thể thao độc đáo. Vô cùng thoáng mát cho ngày hè nóng bức</p>
+            <h2>350.000 VNĐ</h2>
+            <a href="/chi-tiet?id=<%= product[i].id %>"><p class="back">MUA NGAY</p></a>
+        </div>
+    <% } %>
+<!--        <div class="noidung">-->
+<!--            <img src="images/ass3.1.jpg"/>-->
+<!--            <h1>hip pants 1</h1>-->
+<!--            <p>bộ thể thao độc đáo. Vô cùng thoáng mát cho ngày hè nóng bức</p>-->
+<!--            <h2>350.000 VNĐ</h2>-->
+<!--            <p class="back">MUA NGAY</p>-->
+<!--        </div>-->
+
+</div>
+</body>
+</html>
